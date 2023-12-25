@@ -8,17 +8,14 @@ import java.io.IOException;
 import java.sql.*;
 
 public class OuterJFrame extends JFrame{
-
-    private OuterPanel outerPanel;
-    private InnerPanel innerPanel;
-
     public OuterJFrame() {
-        setTitle("日語五十音學習平台 (目前僅提供平假名)");
-        outerPanel = new OuterPanel();
+        setTitle("日語五十音學習平台");
+        OuterPanel outerPanel = new OuterPanel();
         add(outerPanel, BorderLayout.CENTER);
-        innerPanel = new InnerPanel();
+
+        InnerPanel innerPanel = new InnerPanel();
         add(innerPanel, BorderLayout.SOUTH);
-        innerPanel.setPreferredSize(new Dimension(300,250));
+        innerPanel.setPreferredSize(new Dimension(300,300));
 
         pack();
     }

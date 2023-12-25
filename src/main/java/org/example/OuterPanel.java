@@ -6,10 +6,9 @@ import java.awt.*;
 import java.awt.event.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.sql.*;
-import java.util.ArrayList;
+
 
 public class OuterPanel extends JPanel {
     private String[] a = {"あ", "い", "う", "え", "お"};
@@ -23,18 +22,15 @@ public class OuterPanel extends JPanel {
     private String[] ra = {"ら", "り", "る", "れ", "ろ"};
     private String[] wa = {"わ", "を"};
     private String[] h = {"ん"};
-    private final JComboBox[] comboBoxes;
-    private String romaji;
+    private String romaji = "";
     private BufferedImage image;
-    private final JButton playButton;
-    private PlaySoundTest playSoundTest;
-//    private InnerPanel innerPanel;
+
     public OuterPanel() {
         setLayout(new FlowLayout());
 
 //        innerPanel = new InnerPanel();
 
-        comboBoxes = new JComboBox[]{
+        JComboBox[] comboBoxes = new JComboBox[]{
                 new JComboBox(a),
                 new JComboBox(ka),
                 new JComboBox(sa),
@@ -51,20 +47,56 @@ public class OuterPanel extends JPanel {
             comboBox.addActionListener(new ComboListener());
             add(comboBox);
         }
-        playButton = new JButton("播放鍵");
+        JButton playButton = new JButton("播放鍵");
         add(playButton);
         playButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                if (romaji != "") {
-                    playSoundTest.startPlayingSound("C:\\Users\\a4129\\OneDrive\\文件\\大三上" +
+                if (!romaji.isEmpty()) {
+                    PlaySoundTest.startPlayingSound("C:\\Users\\a4129\\OneDrive\\文件\\大三上" +
                             "\\Advanced Object-oriented programming\\B11009006_Final_v2" +
                             "\\B11009006_Final\\sounds\\" + romaji + ".wav");
                 } else {
+                    JOptionPane.showMessageDialog(OuterPanel.this,
+                            "You have to choose an item for listening.");
                 }
             }
         });
-
+        JButton katakanaButton = new JButton("轉換成片假名");
+        add(katakanaButton);
+        katakanaButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                if (!romaji.isEmpty()) {
+                    try {
+                        loadImage(romaji + "k");
+                    } catch (IOException ex) {
+                        throw new RuntimeException(ex);
+                    }
+                } else {
+                    JOptionPane.showMessageDialog(OuterPanel.this,
+                            "You must choose an item for changing.");
+                }
+            }
+        });
+        //  katakana and hiragana button 可以改做成radiobutton and group up.
+        JButton hiraganaButton = new JButton("轉換成平假名");
+        add(hiraganaButton);
+        hiraganaButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                if (!romaji.isEmpty()) {
+                    try {
+                        loadImage(romaji);
+                    } catch (IOException ex) {
+                        throw new RuntimeException(ex);
+                    }
+                } else {
+                    JOptionPane.showMessageDialog(OuterPanel.this,
+                            "You must choose an item for changing.");
+                }
+            }
+        });
     }
     private class ComboListener implements ActionListener {
         @Override
@@ -109,23 +141,17 @@ public class OuterPanel extends JPanel {
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
         if (image != null) {
-            int desiredWidth = 200; // Set your desired width
-            int desiredHeight = 200; // Set your desired height
-
-            int x = (getWidth() - desiredWidth) / 2;
-            int y = (getHeight() - desiredHeight) / 2;
-
-            // Draw the scaled image, 縮小比例
-            g.drawImage(image.getScaledInstance(desiredWidth, desiredHeight, Image.SCALE_SMOOTH), x, y, this);
+            int x = (getWidth() - image.getWidth()) / 2;
+            int y = (getHeight() - image.getHeight()) / 2;
+            g.drawImage(image, x, y, this);
+//            int desiredWidth = 300; // Set your desired width
+//            int desiredHeight = 200; // Set your desired height
+//
+//            int x = (getWidth() - desiredWidth) / 2;
+//            int y = (getHeight() - desiredHeight) / 2;
+//
+//            // Draw the scaled image, 縮小比例
+//            g.drawImage(image.getScaledInstance(desiredWidth, desiredHeight, Image.SCALE_SMOOTH), x, y, this);
         }
     }
-    // return image dimensions
-//    @Override
-//    public Dimension getPreferredSize() {
-//        if (image != null) {
-//            return new Dimension(image.getWidth(), image.getHeight());
-//        } else {
-//            return super.getPreferredSize();
-//        }
-//    }
 }
