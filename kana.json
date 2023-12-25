@@ -1,0 +1,346 @@
+{
+    "-": {
+        "a": {
+            "Seion": {
+                "Katakana": "ア",
+                "Hiragana": "あ",
+                "Romaji": "a"
+            }
+        },
+        "i": {
+            "Seion": {
+                "Katakana": "イ",
+                "Hiragana": "い",
+                "Romaji": "i"
+            }
+        },
+        "u": {
+            "Seion": {
+                "Katakana": "ウ",
+                "Hiragana": "う",
+                "Romaji": "u"
+            }
+        },
+        "e": {
+            "Seion": {
+                "Katakana": "エ",
+                "Hiragana": "え",
+                "Romaji": "e"
+            }
+        },
+        "o": {
+            "Seion": {
+                "Katakana": "オ",
+                "Hiragana": "お",
+                "Romaji": "o"
+            }
+        }
+    },
+    "k": {
+        "a": {
+            "Seion": {
+                "Katakana": "カ",
+                "Hiragana": "か",
+                "Romaji": "ka"
+            }
+        },
+        "i": {
+            "Seion": {
+                "Katakana": "キ",
+                "Hiragana": "き",
+                "Romaji": "ki"
+            }
+        },
+        "u": {
+            "Seion": {
+                "Katakana": "ク",
+                "Hiragana": "く",
+                "Romaji": "ku"
+            }
+        },
+        "e": {
+            "Seion": {
+                "Katakana": "ケ",
+                "Hiragana": "け",
+                "Romaji": "ke"
+            }
+        },
+        "o": {
+            "Seion": {
+                "Katakana": "コ",
+                "Hiragana": "こ",
+                "Romaji": "ko"
+            }
+        }
+    },
+    "s": {
+        "a": {
+            "Seion": {
+                "Katakana": "サ",
+                "Hiragana": "さ",
+                "Romaji": "sa"
+            }
+        },
+        "i": {
+            "Seion": {
+                "Katakana": "シ",
+                "Hiragana": "し",
+                "Romaji": "shi"
+            }
+        },
+        "u": {
+            "Seion": {
+                "Katakana": "ス",
+                "Hiragana": "す",
+                "Romaji": "su"
+            }
+        },
+        "e": {
+            "Seion": {
+                "Katakana": "セ",
+                "Hiragana": "せ",
+                "Romaji": "se"
+            }
+        },
+        "o": {
+            "Seion": {
+                "Katakana": "ソ",
+                "Hiragana": "そ",
+                "Romaji": "so"
+            }
+        }
+    },
+    "t": {
+        "a": {
+            "Seion": {
+                "Katakana": "タ",
+                "Hiragana": "た",
+                "Romaji": "ta"
+            }
+        },
+        "i": {
+            "Seion": {
+                "Katakana": "チ",
+                "Hiragana": "ち",
+                "Romaji": "chi"
+            }
+        },
+        "u": {
+            "Seion": {
+                "Katakana": "ツ",
+                "Hiragana": "つ",
+                "Romaji": "tsu"
+            }
+        },
+        "e": {
+            "Seion": {
+                "Katakana": "テ",
+                "Hiragana": "て",
+                "Romaji": "te"
+            }
+        },
+        "o": {
+            "Seion": {
+                "Katakana": "ト",
+                "Hiragana": "と",
+                "Romaji": "to"
+            }
+        }
+    },
+    "n": {
+        "a": {
+            "Seion": {
+                "Katakana": "ナ",
+                "Hiragana": "な",
+                "Romaji": "na"
+            }
+        },
+        "i": {
+            "Seion": {
+                "Katakana": "ニ",
+                "Hiragana": "に",
+                "Romaji": "ni"
+            }
+        },
+        "u": {
+            "Seion": {
+                "Katakana": "ヌ",
+                "Hiragana": "ぬ",
+                "Romaji": "nu"
+            }
+        },
+        "e": {
+            "Seion": {
+                "Katakana": "ネ",
+                "Hiragana": "ね",
+                "Romaji": "ne"
+            }
+        },
+        "o": {
+            "Seion": {
+                "Katakana": "ノ",
+                "Hiragana": "の",
+                "Romaji": "no"
+            }
+        }
+    },
+    "h": {
+        "a": {
+            "Seion": {
+                "Katakana": "ハ",
+                "Hiragana": "は",
+                "Romaji": "ha"
+            }
+        },
+        "i": {
+            "Seion": {
+                "Katakana": "ヒ",
+                "Hiragana": "ひ",
+                "Romaji": "hi"
+            }
+        },
+        "u": {
+            "Seion": {
+                "Katakana": "フ",
+                "Hiragana": "ふ",
+                "Romaji": "fu"
+            }
+        },
+        "e": {
+            "Seion": {
+                "Katakana": "ヘ",
+                "Hiragana": "へ",
+                "Romaji": "he"
+            }
+        },
+        "o": {
+            "Seion": {
+                "Katakana": "ホ",
+                "Hiragana": "ほ",
+                "Romaji": "ho"
+            }
+        }
+    },
+    "m": {
+        "a": {
+            "Seion": {
+                "Katakana": "マ",
+                "Hiragana": "ま",
+                "Romaji": "ma"
+            }
+        },
+        "i": {
+            "Seion": {
+                "Katakana": "ミ",
+                "Hiragana": "み",
+                "Romaji": "mi"
+            }
+        },
+        "u": {
+            "Seion": {
+                "Katakana": "ム",
+                "Hiragana": "む",
+                "Romaji": "mu"
+            }
+        },
+        "e": {
+            "Seion": {
+                "Katakana": "メ",
+                "Hiragana": "め",
+                "Romaji": "me"
+            }
+        },
+        "o": {
+            "Seion": {
+                "Katakana": "モ",
+                "Hiragana": "も",
+                "Romaji": "mo"
+            }
+        }
+    },
+    "y": {
+        "a": {
+            "Seion": {
+                "Katakana": "ヤ",
+                "Hiragana": "や",
+                "Romaji": "ya"
+            }
+        },
+        "u": {
+            "Seion": {
+                "Katakana": "ユ",
+                "Hiragana": "ゆ",
+                "Romaji": "yu"
+            }
+        },
+        "o": {
+            "Seion": {
+                "Katakana": "ヨ",
+                "Hiragana": "よ",
+                "Romaji": "yo"
+            }
+        }
+    },
+    "r": {
+        "a": {
+            "Seion": {
+                "Katakana": "ラ",
+                "Hiragana": "ら",
+                "Romaji": "ra"
+            }
+        },
+        "i": {
+            "Seion": {
+                "Katakana": "リ",
+                "Hiragana": "り",
+                "Romaji": "ri"
+            }
+        },
+        "u": {
+            "Seion": {
+                "Katakana": "ル",
+                "Hiragana": "る",
+                "Romaji": "ru"
+            }
+        },
+        "e": {
+            "Seion": {
+                "Katakana": "レ",
+                "Hiragana": "れ",
+                "Romaji": "re"
+            }
+        },
+        "o": {
+            "Seion": {
+                "Katakana": "ロ",
+                "Hiragana": "ろ",
+                "Romaji": "ro"
+            }
+        }
+    },
+    "w": {
+        "a": {
+            "Seion": {
+                "Katakana": "ワ",
+                "Hiragana": "わ",
+                "Romaji": "wa"
+            }
+        },
+        "o": {
+            "Seion": {
+                "Katakana": "ヲ",
+                "Hiragana": "を",
+                "Romaji": "wo"
+            }
+        }
+    },
+    "*": {
+        "n": {
+            "Seion": {
+                "Katakana": "ン",
+                "Hiragana": "ん",
+                "Romaji": "n"
+            }
+        }
+    }
+}
